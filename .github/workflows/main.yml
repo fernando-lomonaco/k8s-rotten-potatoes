@@ -26,5 +26,5 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags:
-            fernandolomonaco/rotten-potatoes:latest
-            fernandolomonaco/rotten-potatoes:${{ github.run_number }}
+            ${{ secrets.DOCKERHUB_USER }}/rotten-potatoes:latest
+            ${{ secrets.DOCKERHUB_USER }}/rotten-potatoes:v${{ github.run_number }}
